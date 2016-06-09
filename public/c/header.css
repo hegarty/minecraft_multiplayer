@@ -1,0 +1,68 @@
+body.homepage a#logo
+{
+        display:none !important;
+}
+
+body
+{
+	background: url(/i/top_thin.png) repeat-x top center;
+}
+
+nav
+{
+        position:absolute;
+        top:3em;
+        right:3em;
+        height:40px;
+        z-index:3;
+        color:#fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight:300;
+        font-size:.7em;
+}
+
+nav span
+{
+        margin:0 5px;
+        opacity:.75;
+}
+
+nav a, nav a:visited
+{
+        color:#fff;
+}
+
+a#logo
+{
+	color:#fff;
+        line-height:1.25;
+        font-size:1em;
+        font-family: 'minecrafter';
+	text-decoration:none;
+	position:absolute;
+	top:1.5em;
+	left:1.5em;
+}
+
+@media screen and (max-width: 650px)
+{
+	a#logo
+	{
+		top:1em;
+		left:1em;
+	}
+
+        nav
+        {
+                top:1em;
+                right:1em;
+                font-size:1em;
+        }
+
+        nav span
+        {
+                margin:0 10px;
+        }
+}
+
+

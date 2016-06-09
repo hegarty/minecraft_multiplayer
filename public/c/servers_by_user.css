@@ -1,0 +1,53 @@
+body.servers_by_user
+{
+	text-align:center;
+}
+
+#servers_by_user_mount
+{
+	margin:10px auto 0 auto;
+	max-width:750px;
+	width:80%;
+	overflow:visible;
+	background-color:rgba(0,0,0,.3);
+    border-radius:4px;
+}
+
+#servers_by_user_mount ul
+{
+   	font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+	padding:25px 25px 75px 25px;
+	border-radius:4px;
+	text-align:center;
+	margin:0 auto;
+	color:#fff;
+}
+
+#servers_by_user_mount ul li.server_row
+{
+	display:table;
+	margin:0 auto;
+	width:100%;
+	background-color:rgba(0,0,0,.1);
+    border-radius:4px;
+}
+
+#servers_by_user_mount ul li.server_row a
+{
+	text-decoration:none;
+	color:#fff;
+}
+
+#servers_by_user_mount ul li.server_row span
+{
+	display:table-cell;
+	border-collapse: collapse;
+    border-spacing: 10px 50px;
+	padding:.5em 1em;
+}
+
+#servers_by_user_mount ul li.server_row span.server_name
+{
+	text-align:left;
+}

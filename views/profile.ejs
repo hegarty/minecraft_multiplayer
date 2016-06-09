@@ -1,0 +1,6 @@
+<% include partials/head.ejs %>
+<% include partials/navigation.ejs %>
+<div id="profile_mount"><%- profile_component%></div>
+<div id="servers_by_user_mount"><%- (typeof servers_by_user_component != 'undefined')?servers_by_user_component:null %></div>
+
+<% include partials/footer.ejs %>

@@ -1,0 +1,21 @@
+div.form_element label
+{
+	display:inline;
+}
+
+div.form_element input
+{
+	display:block;
+        clear:right;
+}
+
+div.form_element span.help
+{
+	display:inline-block;
+	margin:-2px 0 0 5px;
+	/*color:#4091bf;*/
+	color:#404248;
+	font-size:1.em;
+	text-align:center;
+	cursor:pointer;
+}

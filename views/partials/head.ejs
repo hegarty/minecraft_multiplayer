@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+                <title>Minecraft Mode</title>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/c/reset.css" />
+		<link rel="stylesheet" href="/c/main.css" />
+		<link rel="stylesheet" href="/c/header.css" />
+		<link rel="stylesheet" href="/c/home.css" />
+		<link rel="stylesheet" href="/c/signup.css" />
+		<link rel="stylesheet" href="/c/login.css" />
+		<link rel="stylesheet" href="/c/setup.css" />
+		<link rel="stylesheet" href="/c/profile.css" />
+		<link rel="stylesheet" href="/c/servers_by_user.css" />
+		<link rel="stylesheet" href="/c/server_config_details.css" />
+		<script type="text/javascript">
+			var mode = mode||{};
+			var server_history = <%- (typeof history != 'undefined')?history:"null"%>;
+			var server_hash = "<%-(typeof server_hash != 'undefined')?server_hash:''%>";
+			var is_auth = <%-(typeof is_auth != 'undefined')?is_auth:false%>;
+			var servers_by_user = <%-(typeof servers_by_user != 'undefined')?servers_by_user:false%>;
+			var profile_data = <%-(typeof profile_data != 'undefined')?profile_data:false%>;
+		</script>
+
+	</head>
+        <body class="<%- body_class %>">

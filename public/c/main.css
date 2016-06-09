@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'minecrafter';
+  src: url("/fonts/minecrafter.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/minecrafter.eot?#iefix") format("embedded-opentype"), url("/fonts/minecrafter.woff") format("woff"), url("/fonts/minecrafter.ttf") format("truetype"), url("/fonts/minecrafter.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face 
+{
+  font-family: 'bebas';
+  src: url("/fonts/BebasNeue.otf");
+}
+
+body
+{
+	background-color:#2cac16 !important;
+}

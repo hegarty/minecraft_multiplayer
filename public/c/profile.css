@@ -1,0 +1,133 @@
+body.signup
+{
+	text-align:center;
+}
+
+#profile_mount
+{
+	margin:100px auto 0 auto;
+	max-width:750px;
+	width:80%;
+	/*
+	background: url(/i/pig.png) no-repeat 120% 100%;
+	*/
+	overflow:visible;
+}
+
+#pig
+{
+	display:inline;
+	margin-top:-70px;
+}
+
+#profile_mount #profile
+{
+   	font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+	background-color:rgba(0,0,0,0);
+	border-radius:4px;
+	text-align:center;
+}
+
+#profile_mount #profile .profile_container
+{
+	font-weight: 700;
+    /*
+	background-color:#016D01;
+    */
+	text-align:left;
+	padding:0px;
+	margin-bottom:0px;
+    color: yellow;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#profile_mount #profile .profile_container .profile_username
+{
+	font-size:1.5em;
+	text-transform: capitalize;
+}
+
+#profile_mount #profile .profile_container .joined
+{
+    font-weight:500;
+	font-style:italic;
+    font-size: .5em;
+}
+
+
+
+#profile_mount #profile .profile_container .profile_name
+{   
+	font-weight:500;
+    font-size: .9em; 
+	margin:10px 0 0 0;
+}
+
+
+
+
+#profile_mount #profile button
+{
+	margin:0 auto;
+	display:inline-block;
+	background-color:rgba(255,255,255,.5);
+	border:1px solid green;
+	padding:5px 10px;
+	border-radius:3px;
+	font-family: 'Open Sans', sans-serif;
+	color:#000;
+}
+
+#profile_mount #profile .form_element
+{
+	overflow:hidden;
+    display: table;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#profile_mount #profile .form_element label
+{
+	text-align:right;
+	padding-right:10px;
+	display:inline-block;
+	width:135px;
+    font-weight:300;
+	font-size:.85em;
+	color:#fff;
+	display:table-cell;
+	white-space: nowrap;
+}
+
+#profile_mount #profile .form_element input
+{
+	font-weight:300;
+	font-size:1em;
+	background-color:rgba(255,255,255,.25);
+	border:0;
+	border-radius:2px;
+	padding:5px 0 5px 5px;
+	color:#fff;
+	width:95%;
+	display:table-cell;
+}
+
+#profile_mount #profile .form_element input.error
+{
+	border:3px solid #016D01 !important;
+}
+
+#profile_mount #profile .form_element div.error_message
+{
+	font-weight: 300;
+    font-size: .75em;
+    background-color:#016D01;
+    display: none;
+    padding: 5px 5px;
+    color: #fff;
+    border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
