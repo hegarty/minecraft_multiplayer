@@ -14,7 +14,8 @@ app.use(cookieParser());
 app.use(bodyparser.urlencoded({ extended:true }));
 app.use(bodyparser.json());
 
-app.use(session({secret:'4564f6s4fdsfdfd',saveUninitialized:true,resave:true}));
+var hash = (Math.random()*1e32).toString(36);
+app.use(session({secret: hash, saveUninitialized:true,resave:true}));
 
 app.use(express.static(__dirname + '/public'));
 app.set('view engine','ejs');

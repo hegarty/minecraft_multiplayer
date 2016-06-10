@@ -153,8 +153,13 @@ var PVP = React.createClass(
         },
         input: function(e)
         {
+			$(e).prop('checked', true);
 			this.props.model.pvp = $('input[name="pvp"]:checked').val();
 			console.log("Model:"+ JSON.stringify(this.props.model));
+		},
+		componentDidMount:function()
+		{
+				$("#pvp_false").prop('checked', true);
 		},
         render: function()
         {
@@ -164,10 +169,10 @@ var PVP = React.createClass(
 						<label>Player vs Player (PVP)</label>
 						<span title={this.help} className="help glyphicon glyphicon-question-sign"></span>
 						<span className="setup_radio">
-							<input type="radio" name="pvp" value="true" onClick={this.input} /> True
+							<input type="radio" name="pvp" value="true" onChange={this.input} /> True
 						</span>
 						<span className="setup_radio">
-							<input type="radio" name="pvp" value="false" onClick={this.input} checked="checked" /> False
+							<input type="radio" name="pvp" value="false" id="pvp_false" onChange={this.input} /> False
 						</span>
 					</div>
 					<p>

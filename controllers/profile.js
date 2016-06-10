@@ -39,7 +39,7 @@ var profile_controller =
 
 		model.users.findOne({
         where:{"hash":user_hash},
-		attributes: ['username', 'first_name','last_name','createdAt'],
+		attributes: ['username','hash','first_name','last_name','createdAt'],
         raw: true,
         //logging:console.log 
         }).then(function(data)

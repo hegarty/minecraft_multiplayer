@@ -13,8 +13,9 @@ var setup_controller =
 			console.log('LOAD  event emit');
 			res.render('setup_response.ejs',
 			{
-					title:'Set up a Minecraft Server',
-					output:'yup success'
+					'title':'Set up a Minecraft Server',
+					'body_class':'setup',
+					'output':'yup success'
 			});
 		});
 		
@@ -41,6 +42,7 @@ var setup_controller =
 			res.render('setup_response.ejs',
 			{
 					title:'Set up a Minecraft Server',
+					'body_class':'setup',
 					output:'yup success'
 			});
 		});

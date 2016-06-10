@@ -10,6 +10,7 @@ var Header = React.createClass(
 		{
 			this.setState({
                 "username":profile_data.username,
+				"user_hash":profile_data.hash,
 				"first_name":profile_data.first_name,
 				"last_name":profile_data.last_name,
 				"joined":moment(profile_data.createdAt).format('MMMM Do YYYY'),
@@ -27,6 +28,7 @@ var Header = React.createClass(
 		<div className ="profile_container">
 			<div className="profile_username">{this.state.username} <span className="joined">{"Joined: "+this.state.joined}</span> </div>
 			<div className="profile_name">{this.state.first_name +" "+ this.state.last_name}</div>
+			<div className="add_server"><a href={"/setup/"+this.state.user_hash}>+</a></div>
 		</div>
 		);
 	}

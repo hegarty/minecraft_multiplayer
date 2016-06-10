@@ -36365,8 +36365,12 @@ var PVP = React.createClass({
     $("#pvp").val(v);
   },
   input: function input(e) {
+    $(e).prop('checked', true);
     this.props.model.pvp = $('input[name="pvp"]:checked').val();
     console.log("Model:" + JSON.stringify(this.props.model));
+  },
+  componentDidMount: function componentDidMount() {
+    $("#pvp_false").prop('checked', true);
   },
   render: function render() {
     return React.createElement(
@@ -36384,13 +36388,13 @@ var PVP = React.createClass({
         React.createElement(
           "span",
           { className: "setup_radio" },
-          React.createElement("input", { type: "radio", name: "pvp", value: "true", onClick: this.input }),
+          React.createElement("input", { type: "radio", name: "pvp", value: "true", onChange: this.input }),
           " True"
         ),
         React.createElement(
           "span",
           { className: "setup_radio" },
-          React.createElement("input", { type: "radio", name: "pvp", value: "false", onClick: this.input, checked: "checked" }),
+          React.createElement("input", { type: "radio", name: "pvp", value: "false", id: "pvp_false", onChange: this.input }),
           " False"
         )
       ),
@@ -36672,6 +36676,7 @@ var Header = React.createClass({
 		if (profile_data) {
 			this.setState({
 				"username": profile_data.username,
+				"user_hash": profile_data.hash,
 				"first_name": profile_data.first_name,
 				"last_name": profile_data.last_name,
 				"joined": moment(profile_data.createdAt).format('MMMM Do YYYY')
@@ -36702,6 +36707,15 @@ var Header = React.createClass({
 				'div',
 				{ className: 'profile_name' },
 				this.state.first_name + " " + this.state.last_name
+			),
+			React.createElement(
+				'div',
+				{ className: 'add_server' },
+				React.createElement(
+					'a',
+					{ href: "/setup/" + this.state.user_hash },
+					'+'
+				)
 			)
 		);
 	}
